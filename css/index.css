@@ -6,9 +6,7 @@ header img
 nav a
 {
     text-decoration: none;
-        /*below I changed the color*/
     color: white;
-        /*I added some padding*/
 }
 nav
 {
@@ -88,5 +86,5 @@ footer .end
 }
 footer .social
 {
-    text-decoration: none;
+    text-emphasis-style: none;
 }

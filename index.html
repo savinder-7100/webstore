@@ -6,7 +6,7 @@
     <title>eStore.ca: Low Prices - Fast Shipping - Million of Items</title>
     <meta name="description" content="[A short description]">
     <meta name="author" content="[Your Name]">
-    <link rel="stylesheet" href="/css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <!--<link rel="stylesheet" href="/css/reset.css">--> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Material design icons are use below. Remove this line if using other font packs or images. Details on Material Design icons can be found here: https://material.io/resources/icons/ -->
     <link rel="stylesheet" href="/css/index.css">
   </head>
@@ -14,19 +14,15 @@
     <!-- Note: From this point oneward, this document should be considered 100% customizable. The elements and structure below are simply an example template to get you started. Your products and application will have different criteria that will give you the opportunity to customize all aspects of this document to your needs. Use what you need, discard or modify anything that's not directly useful in reaching your end goal. -->
 
     <header>
-
-        <button type="button">
-            <span class="material-icons">menu</span>
-          </button>
-
       <!-- Site logo -->
       <a href="index.html"><img src="img/estorelogo.svg" alt="Logo"></a>
+
 
       <!-- Navigation menu and toggle button -->
       <nav aria-label="Primary">
         <ul>
           <li><a href="#">eStore Deals</a>
-            <ul>
+            <ul >
               <li><a href="#">Best of Cyber week</a></li>
               <li><a href="#">Deals of the Day</a></li>
               <li><a href="#">Coupons</a></li>
@@ -41,20 +37,12 @@
         </ul>
       </nav>
 
-      <!-- Search the site -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+      <div class="gif"></div>
 
-      <!-- Additional functionality or links -->
-      <ul>
-        <li><button><span class="material-icons">favorite_border</span></button></li>
-        <li><button><span class="material-icons">shopping_cart</span></button></li>
-      </ul>
-    </header>
+      <!-- Search the site -->
+        <form class="searchbox">
+          <input type="text" name="find" id="itemSearch" placeholder="Search Brands or Items">
+        </form>
 
     <main>
       <header>
@@ -63,6 +51,16 @@
         <!-- Filtering product form -->
         <form>
           <h2>Filters</h2>
+          <label for="categoryName">Category:
+              <select name="categoryName" id="categoryName">
+                <option value="all" selected>All Products</option>
+                <option value="fashion">Fashion</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="body care">Body Products</option>
+                <option value="sanitary">Sanitary</option>
+                <option value="home decor">Home Decor</option>
+              </select>
+            </label>
           <fieldset>
             <label for="sort">Show</label>
             <select name="sort" id="sort">
@@ -123,7 +121,7 @@
         </form>
       </header>
 
-      <section>
+      <section class="parent">
         <h2>Search Results</h2>
 
         <!-- Note: All 5 products are identical -->
@@ -172,16 +170,14 @@
                 <a href="#">See more</a>
               </footer>
             </form>
-          </article>
+          </article><hr>
 
           <!-- Product 2 -->
           <article class="product">
             <header>
               <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/33B0A1CC-399A-47AF-B208-0C24CE4ADBFA_large.jpeg?v=1574475055" alt="Product Image">
             </header>
-            <h3>MSCH COPENHAGEN
-
-              Alva Msch Est Tee // Black/White</h3>
+            <h3>MSCH COPENHAGEN Alva Msch Est Tee // Black/White</h3>
             <p>Boyfriend Fitted T-shirt with a roll-up sleeve with the MSCH Logo. </p>
             <form>
               <fieldset>
@@ -210,19 +206,17 @@
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
                 <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <a href="#">See more</a>
               </footer>
             </form>
-          </article>
+          </article><hr>
 
           <!-- Product 3 -->
           <article class="product">
             <header>
               <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/5C85ED49-B99F-430D-B60A-7CE542D00BA8_large.jpeg?v=1574474583" alt="Product Image">
             </header>
-            <h3>RICOCHET
-
-              Atomic Jumper // Lime Green</h3>
+            <h3>RICOCHET Atomic Jumper // Lime Green</h3>
             <p>Slim fit deep rib knitted crew neck jumper. Long slim sleeves. Length hits below the hip. Available in Bright Violet and Lime Green. 
 
               85% Viscose 15% Nylon. Imported.</p>
@@ -253,19 +247,17 @@
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
                 <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <a href="#">See more</a>
               </footer>
             </form>
-          </article>
+          </article><hr>
     
           <!-- Product 4 -->
           <article class="product">
             <header>
               <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/image_abe45ed8-5d17-42ff-ac9f-83d7b1651933_large.jpg?v=1571709560" alt="Product Image">
             </header>
-            <h3>REMAIN
-
-              Bias Skirt</h3>
+            <h3>REMAIN Bias Skirt</h3>
             <p>Undoubtedly the must-have staple in any wardrobe this season, the Bias Skirt now comes in a bold Snake Print. A mid-length cut on the bias to flatter, this skirt is easy to wear dressed up or down for every occasion. Made to be an effortless style with an elasticated waistband you won’t want to take it off. </p>
             <form>
               <fieldset>
@@ -294,10 +286,10 @@
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
                 <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <a href="#">See more</a>
               </footer>
             </form>
-          </article>
+          </article><hr>
 
           <!-- Product 5 -->
           <article class="product">
@@ -333,10 +325,10 @@
                 <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
                 <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
                 <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <a href="#">See more</a>
               </footer>
             </form>
-          </article>
+          </article><hr>
         </div>
       </section>
 
@@ -355,7 +347,7 @@
       </footer>
     </main>
 
-    <footer>
+    <footer class="end">
       <p>&copy; Copyright, 1991.</p>
       <nav aria-label="Legal">
         <ul>
@@ -364,10 +356,10 @@
           <li><a href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+      <ul class="social">
+        <li><a href="www.facebook.com"><span class="material-icons">face</span> Facebook</a></li>
+        <li><a href="www.instagram.com"><span class="material-icons">camera_alt</span> Instagram</a></li>
+        <li><a href="www.twitter.com"><span class="material-icons">alternate_email</span> Twitter</a></li>
       </ul>
     </footer>
     
